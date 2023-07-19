@@ -160,6 +160,14 @@
 		z-index: 1;
 		@apply bg-gray-200;
 	}
+
+	.toggle:before,
+	.toggle:after {
+		@apply right-0 absolute bg-gray-200 transition-all duration-200;
+		content: "";
+		height: 3px;
+		transform-origin: center;
+	}
 }
 
 .modal-close::before {
@@ -249,4 +257,39 @@ svg#svg-star {
 	height: 0;
 	left: -9999px;
 	top: -9999px;
+}
+
+.toggle {
+	position: relative;
+	width: 20px;
+	height: 20px;
+	z-index: 9999;
+}
+
+.toggle:focus {
+	outline: none;
+}
+
+.toggle:before {
+	top: 26%;
+	width: 20px;
+}
+
+.toggle:after {
+	top: 58%;
+	width: 12px;
+}
+
+.toggle.active:before,
+.toggle.active:after {
+	width: 20px;
+	top: 50%;
+}
+
+.toggle.active:before {
+	transform: translateY(-50%) rotate(-45deg);
+}
+
+.toggle.active:after {
+	transform: translateY(-50%) rotate(45deg);
 }

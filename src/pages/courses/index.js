@@ -76,7 +76,7 @@ function Courses({ data }) {
 					className="meta-title absolute bottom-0 object-fill z-0 w-full flex justify-center items-center"
 					style={{ marginBottom: "-25px" }}
 				>
-					<div className="">
+					<div className="px-4">
 						<h3 className="text-6xl text-center text-teal-500 font-semibold">
 							Library
 						</h3>
@@ -153,12 +153,12 @@ function Courses({ data }) {
 					</div>
 				</div>
 
-				<div className="container mx-auto z-10 relative">
+				<div className="container px-4 mx-auto z-10 relative">
 					<Header></Header>
 				</div>
 			</section>
 
-			<section className="container mx-auto pt-24">
+			<section className="container px-4 mx-auto pt-24">
 				<ListCourses data={data}></ListCourses>
 			</section>
 			<section className="mt-24 bg-indigo-1000 py-12">

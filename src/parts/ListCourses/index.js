@@ -8,7 +8,7 @@ export default function ListCourses({ data }) {
 	// console.log(data);
 	return (
 		<>
-			<div className="flex justify-between items-center">
+			<div className="flex flex-wrap justify-between items-center">
 				<div className="w-auto">
 					<h2 className="text-lg text-gray-600">New Classes</h2>
 					<h3 className="text-xl text-gray-900">

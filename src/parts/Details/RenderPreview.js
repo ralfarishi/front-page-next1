@@ -33,7 +33,7 @@ export default function RenderPreview({ previews }) {
 												<Modal
 													content={(toggleModal) => (
 														<Youtube
-															className="w-100"
+															className="w-full"
 															videoId={child?.video}
 															id={child?.video}
 															opts={{
