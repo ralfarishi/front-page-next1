@@ -230,6 +230,7 @@ function DetailsCourse({ data }) {
 		</>
 	);
 }
+
 DetailsCourse.getInitialProps = async (props) => {
 	const { id } = props.query;
 	try {
